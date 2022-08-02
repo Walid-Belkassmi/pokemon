@@ -20,9 +20,13 @@ const App = () => {
       .then((data) => setPokemon(data));
   };
 
+  if (!pokemon) {
+    return null;
+  }
+
   return (
     <div className="display">
-      <div className="card">
+      <div className="pokemon-card">
         <img
           src={pokemon.sprites.other["official-artwork"].front_default}
           alt="pokemon"
@@ -37,7 +41,9 @@ const App = () => {
           ))}
         </ul>
       </div>
-      <button onClick={getRandomPokemon}>Generate random pokemon</button>
+      <button className="btn btn-light" onClick={getRandomPokemon}>
+        Generate random pokemon
+      </button>
     </div>
   );
 };
