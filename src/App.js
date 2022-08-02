@@ -37,7 +37,7 @@ const App = () => {
         <h2 className="types">Types :</h2>
         <ul>
           {pokemon.types.map((type) => (
-            <li key={i}>{type.type.name}</li>
+            <li>{type.type.name}</li>
           ))}
         </ul>
       </div>

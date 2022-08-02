@@ -1,5 +1,11 @@
 body {
-  background-color: rgb(26, 32, 44);
+  /* background-color: rgb(26, 32, 44); */
+  background: rgb(28, 28, 171);
+  background: radial-gradient(
+    circle,
+    rgba(28, 28, 171, 1) 0%,
+    rgba(58, 62, 79, 1) 100%
+  );
   color: white;
 }
 
@@ -24,10 +30,13 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 2px solid white;
+  border: 5px double white;
   border-radius: 5px;
   margin-top: 10px;
   height: 600px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 img {
