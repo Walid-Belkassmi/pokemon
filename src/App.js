@@ -34,7 +34,7 @@ const App = () => {
         <h1>{pokemon.name}</h1>
         <h2>Height : {pokemon.height}</h2>
         <h2>Weight : {pokemon.weight}</h2>
-        <h2>Types:</h2>
+        <h2 className="types">Types :</h2>
         <ul>
           {pokemon.types.map((type) => (
             <li>{type.type.name}</li>
